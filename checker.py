@@ -16,7 +16,7 @@ invalid = 'error' in api0
 if invalid == True:
   print('Invalid inputs, try again.')
 else:
-  print(api0['dungeons']['catacombs']['level']['level'])
+  print('Catacombs level for user "' + ign + '":', api0['dungeons']['catacombs']['level']['level'])
 
 
 # ['dungeons']['catacombs']['level']['level']
