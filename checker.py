@@ -5,8 +5,8 @@ import requests
 # defining functions
 
 # deciding 
-ign = input('What is your ign? \n')
-profile = input('What profile? \n')
+ign = input('What is your ign?\n')
+profile = input('What profile?\n')
 
 # main
 api0 = requests.get('https://sky.shiiyu.moe/api/v2/dungeons/' + ign + '/' + profile).json()
