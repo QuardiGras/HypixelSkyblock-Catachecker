@@ -11,8 +11,6 @@ profile = input('What profile?\n')
 # main
 api0 = requests.get('https://sky.shiiyu.moe/api/v2/dungeons/' + ign + '/' + profile).json()
 
-# ['dungeons']['catacombs']['level']['level']
-
 try:
   progress = api0['dungeons']['catacombs']['level']['progress']
 
@@ -26,3 +24,5 @@ try:
 
 except:
   print('Invalid inputs, try again.')
+
+# ['dungeons']['catacombs']['level']['level']
